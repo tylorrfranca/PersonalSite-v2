@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter} from "next/font/google";
+import { Jockey_One , Teko} from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/libs/utility/providers/Providers";
 import { Box } from "panda";
@@ -10,9 +11,21 @@ const inter = Inter({
     variable: "--inter-font",
 });
 
+const jockeyOne = Jockey_One({
+    subsets: ["latin"],
+    weight: ["400"],
+    variable: "--jockey-one",
+});
+
+const teko = Teko({
+    subsets: ["latin"],
+    weight: ["300", "400", "500", "600", "700"],
+    variable: "--teko",
+});
+
 export const metadata: Metadata = {
-    title: "Lucas Amberg",
-    description: "Lucas Amberg's Portfolio Site",
+    title: "Tylor Franca",
+    description: "Tylor Franca's Portfolio Site",
 };
 
 export default function RootLayout({
@@ -21,17 +34,19 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en"
+        className={`${jockeyOne.variable} ${teko.variable}`}>
             <body
                 style={{ overflowX: "hidden" }}
-                className={`${inter.variable}`}>
+                >
                 <Providers>
                     <Box
                         scrollbarWidth={"none"}
                         width="screen"
                         padding="0"
                         minHeight="screen"
-                        overflowX="hidden">
+                        overflowX="hidden"
+                        bgColor={'#0f0f0f'}>
                         {children}
                     </Box>
                 </Providers>

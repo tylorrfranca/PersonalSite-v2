@@ -7,7 +7,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
             accentColor="purple"
             panelBackground="solid"
             radius="large"
-            scaling="105%">
+            scaling="105%"
+            >
             {children}
         </Theme>
     );
