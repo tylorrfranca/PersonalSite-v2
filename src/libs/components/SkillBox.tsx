@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef  } from "react";
 import { Box } from "panda";
 import Image from "next/image";
-import Lottie from 'react-lottie-player/dist/LottiePlayerLight';
+import Lottie from 'react-lottie-player';
 
 interface SkillBoxProps{
     width:number

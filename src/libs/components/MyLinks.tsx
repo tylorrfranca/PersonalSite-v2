@@ -1,7 +1,7 @@
 
 'use client'
 import { Box } from "panda";
-import Lottie from 'react-lottie-player/dist/LottiePlayerLight';
+import Lottie from 'react-lottie-player';
 import Link from "next/link";
 
 interface MyLinksProps{
