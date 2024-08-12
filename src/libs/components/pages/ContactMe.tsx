@@ -17,8 +17,13 @@ export function ContactMe(){
     
             <Grey>
                 <BuildingBlock title= "Contact Me"
-                height='900px'
-                alignItems="start"
+                height={{                        
+                    base:'530px',
+                    sm:'700px',
+                    md:'700px',
+                    lg:'900px',
+                    xl: '900px'}}
+                alignItems="center"
                 flexDirection="column">
 
                 {/* <Box border={'5px solid #ffffff'}

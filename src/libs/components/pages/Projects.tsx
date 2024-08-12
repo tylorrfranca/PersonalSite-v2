@@ -1,3 +1,4 @@
+'use client'
 import { BuildingBlock } from "../BuidlingBlock";
 import { Black } from "../backgrounds/Black";
 import { Box, Grid } from "panda";
@@ -5,7 +6,7 @@ import { Heading } from "@radix-ui/themes";
 import Image from "next/image";
 import { SWProjectBox } from "../SWProjectBox";
 import {HWProjectBox} from "../HWProjectBox"
-
+import GitHubButton from 'react-github-btn'
 
 
 
@@ -15,13 +16,32 @@ export function Projects(){
 
             <Black>
             <BuildingBlock title='Projects'
-            height="700px"
-            alignItems="center">
+            height={{
+                base:'1100px',
+                sm:'1400px',
+                md:'1300px',
+                lg:'800px',
+                xl: '800px'}}
+            alignItems="center"
+            flexDirection={'column'}
+            >
             
             <Grid
-            gridTemplateColumns={2}
-            gridTemplateRows={2}
-            justifyContent={'center'}
+            gridTemplateColumns={{
+                base:1,
+                sm:1,
+                md:1,
+                lg:2,
+                xl: 2
+            }}
+            gridTemplateRows={{
+                base:1,
+                sm:1,
+                md:1,
+                lg:2,
+                xl:2
+            }}
+            justifyContent={'start'}
             >
             <SWProjectBox 
             src = '/greenField.png'
@@ -80,11 +100,8 @@ export function Projects(){
             name="Tylor Franca, Anthony Keroles, & Nick DeGreef"/>
 
             </Grid>
-
+            <GitHubButton data-size={'large'} href="https://github.com/tylorrfranca">More Projects</GitHubButton>
             </BuildingBlock>
-
-    
-            
             </Black>
 
     );

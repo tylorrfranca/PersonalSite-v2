@@ -57,8 +57,20 @@ export function SkillBox({width, height, animationData, title}:SkillBoxProps){
             }}>
                 <Box
                 ref={boxRef} // Attach the ref to the Box component
-                width="200px"
-                height="200px"
+                width={{
+                    base:'150px',
+                    sm:'180px',
+                    md:'180px',
+                    lg:'200px',
+                    xl:'200px'
+                }}
+                height={{
+                    base:'150px',
+                    sm:'180px',
+                    md:'180px',
+                    lg:'200px',
+                    xl:'200px'
+                }}
                 bgColor={'#000000'}
                 borderRadius={'50%'}
                 marginX={40}

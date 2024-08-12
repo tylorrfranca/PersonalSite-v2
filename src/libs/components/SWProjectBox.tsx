@@ -35,6 +35,11 @@ export function SWProjectBox({src, alt, title, description, timeFrame, skillsUse
                 alignItems={'center'}
                 justifyContent={'center'}
                 flexDirection={'column'}
+                fontSize={{
+                    base:'1rem',
+                    sm:'1.5rem'
+                }}
+                textAlign={'center'}
                 transition="all 0.3s ease-in-out"
                 marginX={50}
                 marginY={20}
@@ -43,21 +48,50 @@ export function SWProjectBox({src, alt, title, description, timeFrame, skillsUse
                 }}
                 onClick={handleOpen}>
                     <Box
-                    width="400px"
-                    height="200px"
-                    borderRadius={50}
+                    width={{        
+                        base:'260px',
+                        sm: '400px',
+                        md: '400px',
+                        lg: '400px',
+                        xl: '400px',}}
+                        height={{        
+                        base:'130px',
+                        sm: '200px',
+                        md: '200px',
+                        lg: '200px',
+                        xl: '200px',}}
+                    borderRadius={{
+                        base:20,    
+                        sm:50
+                        }}
                     margin={10}
                     bgColor={'white'}
                     display={'flex'}
                     alignItems={'center'}
                     justifyContent={'center'}
                     overflow="hidden">
+
+                    <Box 
+                    width={{        
+                    base:'260px',
+                    sm: '400px',
+                    md: '400px',
+                    lg: '400px',
+                    xl: '400px',}}
+                    height="auto"  
+                    position="relative">
                     <Image src= {src}
                     alt = {alt}
+                    layout="responsive"
                     width={400}
-                    height={250}
+                    height={200}
+                    objectFit="cover"
                     >
                     </Image>
+                    </Box>
+
+
+
                     </Box>
                     {title}
                 </Box>
