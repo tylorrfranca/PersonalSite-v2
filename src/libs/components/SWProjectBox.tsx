@@ -4,6 +4,8 @@ import { Modal } from '@mui/material';
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
+import { CloseIcon } from '@chakra-ui/icons';
+import { IconButton} from '@chakra-ui/react';
 
 
 interface SWProjectBoxProps{
@@ -104,6 +106,7 @@ export function SWProjectBox({src, alt, title, description, timeFrame, skillsUse
                 top="50%"
                 left="50%"
                 width={{
+                    base:'400px',
                     sm: '400px',
                     md: '600px',
                 }}
@@ -112,9 +115,22 @@ export function SWProjectBox({src, alt, title, description, timeFrame, skillsUse
                 color="white"
                 transform={'translate(-50%, -50%)'}
                 padding={40}
+                maxHeight="90vh"  // Sets a maximum height relative to the viewport
+                overflow="auto" 
                 >
+                <IconButton
+                aria-label="close"
+                onClick={handleClose}
+                position="absolute"
+                top="25px"
+                right="30px"
+                color="white"
+                bgColor="transparent"
+                _hover={{ bgColor: 'rgba(255, 255, 255, 0.2)' }}
+                icon={<CloseIcon />}
+                />
                 <Box
-                    marginTop={2}
+                    marginTop={20}
                     display="flex"
                     justifyContent="center"
                     alignItems="center"

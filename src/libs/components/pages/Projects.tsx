@@ -74,7 +74,7 @@ export function Projects(){
             name="Tylor Franca"/>
 
             <HWProjectBox 
-            src = '/lineCar.jpg'
+            src = '/lineCar.JPG'
             alt= 'tylor franca'
             title="Analog Line Following Robot"
             description="This project involved building a line-following robot without the use of programmable devices like FPGAs or microcontrollers. The robot relied on analog circuitry, including infrared sensors, OP amp comparators, and MOSFETs, to detect and follow a path marked with black tape on white poster board. " 
