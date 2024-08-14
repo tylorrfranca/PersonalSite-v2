@@ -44,7 +44,7 @@ export function Resume(){
         }}
         >
         <Link 
-        href = '/Tylor_Franca_Pires_Resume.pdf'
+        href = '/Tylor_Franca_Pires_Resume_official.pdf'
         target="blank">
             Resume
         </Link>
