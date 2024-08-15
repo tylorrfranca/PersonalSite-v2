@@ -24,9 +24,35 @@ const teko = Teko({
 });
 
 export const metadata: Metadata = {
+
     title: "Tylor Franca",
     description: "Tylor Franca's Portfolio Site",
+    openGraph: {
+        title: 'Tylor Franca',
+        description: "Tylor Franca's Portfolio Site",
+        url: 'https://www.tylorfranca.dev',
+        siteName: 'Tylor Franca Portfolio',
+        images: [
+            {
+                url: 'https://www.tylorfranca.dev/profilepic.jpg',  // Updated URL
+                width: 800,
+                height: 600,
+                alt: 'Tylor Franca Profile Picture',
+            },
+        ],
+        locale: 'en_US',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Tylor Franca',
+        description: "Tylor Franca's Portfolio Site",
+        images: [
+            'https://www.tylorfranca.dev/profilepic.jpg',  // Updated URL
+        ],
+    },
 };
+
 
 export default function RootLayout({
     children,
