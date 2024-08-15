@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         siteName: 'Tylor Franca Portfolio',
         images: [
             {
-                url: 'https://www.tylorfranca.dev/profilepic.JPG',  // Updated URL
+                url: 'https://www.tylorfranca.dev/_next/image?url=%2FprofilePic.JPG&w=1920&q=75',  // Updated URL
                 width: 800,
                 height: 600,
                 alt: 'Tylor Franca Profile Picture',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         title: 'Tylor Franca',
         description: "Tylor Franca's Portfolio Site",
         images: [
-            'https://www.tylorfranca.dev/profilepic.JPG',  // Updated URL
+            'https://www.tylorfranca.dev/_next/image?url=%2FprofilePic.JPG&w=1920&q=75',  // Updated URL
         ],
     },
 };
